@@ -23,11 +23,13 @@ export default function SearchView() {
 
   return (
     <div className="container">
-      <h1>Búsqueda de ciudad</h1>
-      <SearchForm onSearch={handleSearch} />
-      {loading && <LoadingSpinner />}
-      {error && <p>{error}</p>}
-      {!loading && !error && <CityList cities={cities} />}
+        <div className="card">
+            <h1>Búsqueda de ciudad</h1>
+            <SearchForm onSearch={handleSearch} />
+            {loading && <LoadingSpinner />}
+            {error && <p>{error}</p>}
+            {!loading && !error && <CityList cities={cities} />}
+        </div>
     </div>
   );
 }

@@ -31,11 +31,13 @@ export default function DetailView() {
 
   return (
     <div className="container">
-      <h1>Clima en {name}</h1>
-      <button onClick={() => nav('/')}>← Volver</button>
-      {loading && <LoadingSpinner />}
-      {error && <p>{error}</p>}
-      {weather && <ForecastTable weatherData={weather} />}
+        <div className="card">
+            <h1>Clima en {name}</h1>
+            <button onClick={() => nav('/')}>← Volver</button>
+            {loading && <LoadingSpinner />}
+            {error && <p>{error}</p>}
+            {weather && <ForecastTable weatherData={weather} />}
+        </div>
     </div>
   );
 }
