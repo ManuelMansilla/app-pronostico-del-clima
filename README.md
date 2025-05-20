@@ -25,39 +25,39 @@ Aplicación web SPA para consultar el pronóstico del clima de los próximos 7 d
 
 ## Estructura del proyecto
 
-app-pronostico-del-clima/
-│
-├── public/
-│ └── index.html
-│
-├── src/
-│ ├── assets/
-│ ├── components/
-│ │ ├── CityList.js
-│ │ ├── ForecastTable.js
-│ │ ├── Header.css
-│ │ ├── Header.js
-│ │ ├── LoadingSpinner.css
-│ │ ├── LoadingSpinner.js
-│ │ ├── SearchForm.js
-│ │ └── WeatherIcon.js
-│ ├── services/
-│ │ └── api.js
-│ ├── styles/
-│ ├── views/
-│ │ ├── SearchView.js
-│ │ └── DetailView.js
-│ ├── App.css
-│ ├── App.js
-│ ├── index.css
-│ ├── index.js
-│ └── reportWebVitals.js
-│
-├── .env
-├── .gitignore
-├── package-lock.json
-├── package.json
-└── README.md
+app-pronostico-del-clima/ 
+│ 
+├── public/ 
+│ └── index.html 
+│ 
+├── src/ 
+│ ├── assets/ 
+│ ├── components/ 
+│ │ ├── CityList.js 
+│ │ ├── ForecastTable.js 
+│ │ ├── Header.css 
+│ │ ├── Header.js 
+│ │ ├── LoadingSpinner.css 
+│ │ ├── LoadingSpinner.js 
+│ │ ├── SearchForm.js 
+│ │ └── WeatherIcon.js 
+│ ├── services/ 
+│ │ └── api.js 
+│ ├── styles/ 
+│ ├── views/ 
+│ │ ├── SearchView.js 
+│ │ └── DetailView.js 
+│ ├── App.css 
+│ ├── App.js 
+│ ├── index.css 
+│ ├── index.js 
+│ └── reportWebVitals.js 
+│ 
+├── .env 
+├── .gitignore 
+├── package-lock.json 
+├── package.json 
+└── README.md 
 
 ## Cómo ejecutar en local
 
@@ -67,13 +67,15 @@ app-pronostico-del-clima/
    cd app-pronostico-del-clima
 
 2. **Configura tus variables de entorno**
-   Crea o edita el archivo .env en la raíz con:
-   REACT_APP_GEOCODE_URL=https://nominatim.openstreetmap.org
-   REACT_APP_WEATHER_URL=http://api.open-meteo.com/v1/forecast
+   Crea o edita el archivo .env en la raíz con: 
+   ```env
+   REACT_APP_GEOCODE_URL=https://nominatim.openstreetmap.org 
+   REACT_APP_WEATHER_URL=https://api.open-meteo.com/v1/forecast
 
-3. **Instala dependencias y arranca el servidor de desarrollo**
-   npm install
-   npm start
+3. **Instala dependencias y arranca el servidor de desarrollo**  
+   ```bash
+   npm install 
+   npm start 
    Abre http://localhost:3000 en tu navegador.
 
 ## Repositorio
